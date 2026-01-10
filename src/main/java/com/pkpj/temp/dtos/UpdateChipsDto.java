@@ -1,0 +1,17 @@
+package com.pkpj.temp.dtos;
+
+import lombok.AllArgsConstructor;
+import lombok.Data;
+import lombok.NoArgsConstructor;
+import org.springframework.web.bind.annotation.RequestParam;
+
+import java.math.BigDecimal;
+
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+public class UpdateChipsDto {
+    private Long userId;
+    private BigDecimal amount ;
+    private String operation;
+}
