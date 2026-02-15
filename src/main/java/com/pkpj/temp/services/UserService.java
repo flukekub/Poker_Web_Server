@@ -3,9 +3,9 @@ package com.pkpj.temp.services;
 import java.math.BigDecimal;
 import java.util.List;
 
-import com.pkpj.temp.dtos.GetMeResponseDto;
+import com.pkpj.temp.dtos.auth.GetMeResponseDto;
 import com.pkpj.temp.dtos.NotificationPayload;
-import com.pkpj.temp.dtos.UpdateChipsDto;
+import com.pkpj.temp.dtos.games.UpdateChipsDto;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.messaging.simp.SimpMessagingTemplate;
 import org.springframework.security.authentication.AuthenticationManager;

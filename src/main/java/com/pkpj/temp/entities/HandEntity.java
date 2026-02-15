@@ -22,8 +22,8 @@ public class HandEntity {
     private Long handId;
 
     @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "game_table_id", nullable = false)
-    private GameTable gameTable;
+    @JoinColumn(name = "table_id", nullable = false)
+    private Tables table;
 
     @Column(columnDefinition = "TEXT", name = "community_cards")
     private String communityCards; // Stored as JSON string: ["Ah","Kd","10s"]
@@ -51,7 +51,6 @@ public class HandEntity {
     @Column( nullable = false, name = "completed_at")
     private LocalDateTime completedAt;
 
-    // One-to-many relationship with PlayerActionEntity
     @OneToMany(mappedBy = "hand", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<PlayerActionEntity> playerActions = new ArrayList<>();
 }

@@ -1,14 +1,12 @@
 package com.pkpj.temp.controller;
 
 import java.io.IOException;
-import java.math.BigDecimal;
 import java.util.List;
-import java.util.Map;
 import java.util.UUID;
 
-import com.pkpj.temp.dtos.GetMeResponseDto;
-import com.pkpj.temp.dtos.LoginResponseDto;
-import com.pkpj.temp.dtos.UpdateChipsDto;
+import com.pkpj.temp.dtos.auth.GetMeResponseDto;
+import com.pkpj.temp.dtos.auth.LoginResponseDto;
+import com.pkpj.temp.dtos.games.UpdateChipsDto;
 import jakarta.servlet.http.HttpServletRequest;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,7 +15,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
-import com.pkpj.temp.dtos.UploadResultDto;
+import com.pkpj.temp.dtos.auth.UploadResultDto;
 import com.pkpj.temp.entities.User;
 import com.pkpj.temp.services.UserService;
 

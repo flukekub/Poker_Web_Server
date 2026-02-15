@@ -1,6 +1,5 @@
 package com.pkpj.temp.entities;
 
-import com.pkpj.temp.constant.GameType;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -23,11 +22,6 @@ public class Tables {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "table_id")
     private Long tableId;
-
-    // --- Foreign Key Configuration ---
-    @OneToOne(cascade = CascadeType.ALL, orphanRemoval = true)
-    @JoinColumn(name = "game_table_id", nullable = false)
-    private GameTable gameTable;
 
     @Column( name = "table_name")
     private String tableName; // Name of the poker table
@@ -56,10 +50,9 @@ public class Tables {
     @Column( name = "created_at")
     private Date createdAt; // Timestamp when the table was created
 
-    // --- Inverse Mapping (Optional but recommended) ---
-    // mappedBy refers to the "tableId" field in the TablePlayer class
     @OneToMany(mappedBy = "table", cascade = CascadeType.ALL,orphanRemoval = true)
     private List<TablePlayer> players = new ArrayList<>();
-
+    @OneToMany(mappedBy = "table", cascade = CascadeType.ALL, orphanRemoval = true)
+    private List<HandEntity> hands = new ArrayList<>();
 
 }

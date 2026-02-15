@@ -1,9 +1,8 @@
-package com.pkpj.temp.dtos;
+package com.pkpj.temp.dtos.games;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.math.BigDecimal;
 

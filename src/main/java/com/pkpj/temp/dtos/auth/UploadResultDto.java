@@ -1,4 +1,4 @@
-package com.pkpj.temp.dtos;
+package com.pkpj.temp.dtos.auth;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;

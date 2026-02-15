@@ -1,8 +1,7 @@
 package com.pkpj.temp.controller;
 
 
-import com.pkpj.temp.dtos.TableDto;
-import com.pkpj.temp.entities.Tables;
+import com.pkpj.temp.dtos.tables.TableDto;
 import com.pkpj.temp.services.TableService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

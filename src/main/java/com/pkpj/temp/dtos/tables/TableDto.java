@@ -1,4 +1,4 @@
-package com.pkpj.temp.dtos;
+package com.pkpj.temp.dtos.tables;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -11,7 +11,6 @@ import java.math.BigDecimal;
 @NoArgsConstructor
 public class TableDto {
     private Long tableId;
-    private Long gameTableId;
     private String tableName;
     private String description;
     private String gameType;

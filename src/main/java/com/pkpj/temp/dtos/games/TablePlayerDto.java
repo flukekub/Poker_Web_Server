@@ -1,4 +1,4 @@
-package com.pkpj.temp.dtos;
+package com.pkpj.temp.dtos.games;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -14,7 +14,6 @@ import java.util.Date;
 public class TablePlayerDto {
     private Long tablePlayerId;
     private Long userId;
-    private Long gameTableId;
     private Long tableId;
     private BigDecimal stax;
     private Integer seatNumber;

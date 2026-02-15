@@ -1,11 +1,10 @@
-package com.pkpj.temp.dtos;
+package com.pkpj.temp.dtos.games;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
-import java.util.List;
 
 @Data
 @NoArgsConstructor

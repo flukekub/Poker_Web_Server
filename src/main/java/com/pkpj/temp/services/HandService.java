@@ -1,26 +1,10 @@
 package com.pkpj.temp.services;
 
-import com.pkpj.temp.constant.BettingRound;
-import com.pkpj.temp.constant.GameState;
-import com.pkpj.temp.dtos.PlayerActionDto;
-import com.pkpj.temp.entities.GameTable;
-import com.pkpj.temp.entities.HandEntity;
-import com.pkpj.temp.entities.PlayerActionEntity;
-import com.pkpj.temp.entities.Tables;
-import com.pkpj.temp.model.Hand;
-import com.pkpj.temp.model.PlayerAction;
-import com.pkpj.temp.repositories.GameTableRepository;
 import com.pkpj.temp.repositories.HandRepository;
 import com.pkpj.temp.repositories.PlayerActionRepository;
-import com.pkpj.temp.repositories.TablesRepository;
 import lombok.RequiredArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
-
-import java.math.BigDecimal;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.stream.Collectors;
 
 @Service
 @RequiredArgsConstructor
@@ -28,7 +12,6 @@ import java.util.stream.Collectors;
 public class HandService {
     private final HandRepository handRepository;
     private final PlayerActionRepository playerActionRepository;
-    private final GameTableRepository gameTableRepository;
 
     // Convert Hand POJO to HandEntity for persistence
 //    public HandEntity saveHand(Hand hand) {
