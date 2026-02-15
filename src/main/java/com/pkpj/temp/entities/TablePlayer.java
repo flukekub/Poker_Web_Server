@@ -46,4 +46,8 @@ public class TablePlayer {
     @Enumerated(EnumType.STRING)
     @Column( name = "table_status")
     private TableStatus tableStatus;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "game_table_id")
+    private GameTable gameTable;
 }
